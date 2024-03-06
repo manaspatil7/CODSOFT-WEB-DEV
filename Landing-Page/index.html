@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Landing page HTML and CSS | Task 1</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts Links For Icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+  <section class="hero-section">
+    <div class="content">
+      <h2 id="typing-effect"></h2>
+      <p>
+        Coffee is a popular and beloved beverage enjoyed by 
+        people around the world. Awaken your senses with a steaming cup of liquid motivation.
+      </p>
+      <button>Order Now</button>
+    </div>
+  </section>
+
+  <script>
+    // Typing effect for the heading
+    const typingEffect = () => {
+      const text = "Start Your Day With Fresh Coffee";
+      let index = 0;
+      const type = () => {
+        if (index < text.length) {
+          document.getElementById("typing-effect").textContent += text[index];
+          index++;
+          setTimeout(type, 100);
+        }
+      };
+      type();
+    };
+
+    typingEffect();
+  </script>
+
+</body>
+</html>

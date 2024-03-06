@@ -1,0 +1,57 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .content {
+  max-width: 800px;
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-section .content h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.hero-section .content button {
+  background: #fff;
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+  color: #fff;
+  background: #C06B3E;
+}
